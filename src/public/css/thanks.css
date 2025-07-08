@@ -1,0 +1,52 @@
+/* === Thanks ページ === */
+
+body.thanks-page {
+  background-color: #fff;
+  font-family: serif;
+  color: #9e9c96;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 背景 Thank you */
+body.thanks-page::before {
+  content: "Thank you";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15vw;
+  color: rgba(158, 156, 150, 0.1);
+  z-index: 0;
+  white-space: nowrap;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.thanks-top-link {
+  display: inline-block;
+  background: #807970;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.thanks-top-link:hover {
+  background: #6e675d;
+}

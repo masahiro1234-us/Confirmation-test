@@ -1,0 +1,165 @@
+/* === Contact ページ === */
+
+body.contact-page {
+  background-color: #fff;
+  font-family: serif;
+  color: #9e9c96;
+}
+
+/* ヘッダーロゴ中央揃え + 下線全幅 */
+.header__logo {
+  font-family: serif;
+  color: #9e9c96;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-bottom: none;
+  padding-bottom: 10px;
+  margin: 0 auto 30px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.header__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 1px;
+  width: 100vw; /* 画面幅全体 */
+  background: #ccc;
+  z-index: -1;
+}
+
+/* Contact タイトル */
+body.contact-page h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 40px;
+}
+
+/* フォーム全体ボックス */
+body.contact-page form {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* form-group 共通 */
+body.contact-page .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* ラベル */
+body.contact-page label {
+  width: 200px;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* 必須赤アスタリスク */
+body.contact-page .required {
+  color: red;
+  margin-left: 5px;
+}
+
+/* input, select, textarea */
+body.contact-page input[type="text"],
+body.contact-page input[type="email"],
+body.contact-page select,
+body.contact-page textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #f5f5f5;
+}
+
+/* 名前 姓名 input 横並び */
+body.contact-page .name-inputs {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+body.contact-page .name-inputs input {
+  width: 50%;
+}
+
+/* 性別 横並び修正 最終版 */
+body.contact-page .gender-group {
+  display: flex;
+  align-items: center;
+}
+
+body.contact-page .gender-group label:first-child {
+  width: 200px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 10px; /* ラベルと選択肢間余白 */
+  flex-shrink: 0;
+}
+
+body.contact-page .gender-options {
+  display: flex;
+  gap: 20px; /* 男性 女性 その他の間隔調整 */
+  align-items: center;
+  flex: 1;
+}
+
+body.contact-page .gender-options label {
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+/* 電話番号3分割 横並び */
+body.contact-page .tel-inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+body.contact-page .tel-inputs input {
+  width: 100px;
+}
+
+/* select カスタム矢印 */
+body.contact-page select {
+  appearance: none;
+  background-image: url('/path/to/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+/* textarea */
+body.contact-page textarea {
+  height: 150px;
+}
+
+/* 確認画面ボタン */
+body.contact-page button {
+  display: block;
+  background: #807970;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  margin: 40px auto 0;
+  border-radius: 3px;
+}
+
+/* contactページheader白背景 */
+.header.contact-header {
+  background: #fff;
+}

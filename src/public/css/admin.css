@@ -1,0 +1,285 @@
+/* === Admin ページ共通設定 === */
+
+body.admin-page {
+  background-color: #fff;
+  font-family: serif;
+  color: #9e9c96;
+  margin: 0;
+}
+
+/* header */
+.header.admin-header {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.header__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  font-size: 24px;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.header-logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  background: rgb(246,246,244);
+  border: 1px solid #ccc;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* main */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* search form */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"],
+.search-form input[type="date"],
+.search-form select {
+  height: 36px;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.search-form input[type="text"] {
+  width: 250px;
+}
+
+.search-form button {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+.search-form button[type="submit"] {
+  background: #6e675d;
+}
+
+.search-form button[type="button"] {
+  background: #a59d95;
+}
+
+.search-form button:hover {
+  opacity: 0.8;
+}
+
+/* table-header (export + pagination 同じ行) */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* export button */
+.export-button {
+  background: #ede9e6;
+  color: #9e9c96;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #807970;
+}
+
+table th {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+}
+
+table td {
+  background: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 詳細ボタン */
+button.detail-button {
+  background: #807970;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.detail-button:hover {
+  opacity: 0.8;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* modal table */
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-table th,
+.modal-table td {
+  background: #fff;
+  padding: 8px;
+}
+
+.modal-table th {
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  width: 30%;
+}
+
+.modal-table td {
+  width: 70%;
+}
+
+/* 削除ボタン */
+.delete-button {
+  display: block;
+  margin: 20px auto 0;
+  background: #b04632;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+/* ========== ページネーション ========== */
+.pagination li.disabled span {
+  display: none; /* dots(…)を非表示 */
+}
+
+/* 前後ボタンも他と同じデザインに統一 */
+.pagination li a,
+.pagination li span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #9e9c96;
+  background: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pagination li span[aria-current="page"] {
+  background: #807970;
+  color: #fff;
+  border-color: #807970;
+}
+
+.pagination li a:hover {
+  background: #f0f0f0;
+}
+
+.pagination li.disabled span {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center; /* 中央寄せにする場合はcenter、右寄せはflex-end */
+  margin-top: 20px;
+}
+
+body::after {
+  content: "CSS読み込みOK";
+  display: none;
+}
+
+.pagination li {
+  list-style: none !important;
+}
+
