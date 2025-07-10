@@ -102,7 +102,7 @@ class ContactController extends Controller
      */
     public function thanks()
     {
-        return view('thanks');
+        return view('contacts.thanks');
     }
 
     /**

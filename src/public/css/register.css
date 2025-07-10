@@ -19,6 +19,7 @@ body.register-page {
   font-size: 24px;
   margin: 0;
   padding: 15px 0;
+  color: #9e9c96;   /* 追加：文字色をloginページと同じに */
 }
 
 /* loginボタン */
@@ -89,12 +90,4 @@ button {
   padding: 10px 30px;
   margin: 0 auto;
   border-radius: 3px;
-}
-
-/* header__logo */
-.header__logo {
-  font-size: 24px;
-  margin: 0;
-  padding: 15px 0;
-  color: #9e9c96; /* 追加：文字色をloginページと同じに */
 }

@@ -38,10 +38,6 @@ Route::get('/contacts/{id}', [ContactController::class, 'show'])->name('contacts
 
 // 管理画面
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
-Route::get('/admin/users', [AdminController::class, 'users'])->name('admin.users');
-
 Route::get('/admin/export', [AdminController::class, 'export'])->name('admin.export');
-
 Route::delete('/admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
-
 Route::post('/edit', [ContactController::class, 'edit'])->name('contacts.edit');

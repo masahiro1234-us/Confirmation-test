@@ -1,100 +1,96 @@
 body.login-page {
-  background: #f5f0eb;
-  font-family: serif;
-  color: #9e9c96;
-  margin: 0;
+    background: #f5f0eb;
+    font-family: serif;
+    color: #9e9c96;
+    margin: 0;
 }
 
 /* header全体 */
 .header.login-header {
-  background: #fff;
-  border-bottom: 1px solid #ccc;
-  position: relative; /* ここにrelative追加でabsolute基準化 */
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative; /* ここにrelative追加でabsolute基準化 */
 }
 
 /* header__inner: ロゴ中央表示 */
 .header__inner {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 20px;
 }
 
 /* ロゴ */
 .header__logo {
-  font-size: 24px;
-  margin: 0;
+    font-size: 24px;
+    margin: 0;
 }
 
 /* registerボタン */
 .header-register-button {
-  position: absolute; /* header.login-header基準で右上配置 */
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  color: #9e9c96;
-  text-decoration: none;
-  border: 1px solid #ccc;
-  padding: 3px 8px;
-  border-radius: 3px;
+    position: absolute; /* header.login-header基準で右上配置 */
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #9e9c96;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background:rgb(246,246,244);
 }
 
 /* main レイアウト */
 main {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 main h1 {
-  font-size: 24px;
-  margin-bottom: 40px;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 /* formボックス */
 form {
-  background: #fff;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: left;
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 /* label */
 label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 /* input */
 input {
-  width: 100%;
-  padding: 10px;
-  background: #f5f5f5;
-  border: none;
-  margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    border: none;
+    margin-bottom: 20px;
 }
 
 /* button */
 button {
-  display: block;
-  background: #807970;
-  color: #fff;
-  border: none;
-  padding: 10px 30px;
-  margin: 0 auto;
-  border-radius: 3px;
+    display: block;
+    background: #807970;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    margin: 0 auto;
+    border-radius: 3px;
 }
 
 /* placeholder文字色を薄く */
 input::placeholder {
     color: #ccc; /* 見本に合わせて薄灰色 */
-}
-
-/* registerボタン背景 */
-.header-register-button {
-    background:rgb(246,246,244);
 }
