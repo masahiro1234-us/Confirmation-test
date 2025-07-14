@@ -7,17 +7,14 @@ use Illuminate\Support\Facades\Schema;
 class CreateCategoriesTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+     * Run the migrations.*
+     * @return void*/
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) 
-        {
-            $table->id();
-            $table->string('name');
-            $table->unsignedBigInteger('user_id');
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id(); // カテゴリID
+            $table->string('name'); // カテゴリ名
+            $table->unsignedBigInteger('user_id'); // 紐づくユーザーID
             $table->timestamps();
 
             // 外部キー制約
@@ -26,10 +23,8 @@ class CreateCategoriesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+     * Reverse the migrations.*
+     * @return void*/
     public function down()
     {
         Schema::dropIfExists('categories');
